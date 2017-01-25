@@ -575,7 +575,10 @@ p{
    margin:5px 0 0;
  }
 
-
+.active {
+  background-color: #22303E;
+  opacity: 50%;
+}
 
 
 
