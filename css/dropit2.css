@@ -1,6 +1,6 @@
 /*
- * Dropit v1.1.0
- * http://dev7studios.com/dropit
+ * dropit2 v1.1.0
+ * http://dev7studios.com/dropit2
  *
  * Copyright 2012, Dev7studios
  * Free to use and abuse under the MIT license.
@@ -8,34 +8,34 @@
  */
 
 /* These styles assume you are using ul and li */
-.dropit {
+.dropit2 {
     list-style: none;
-	 padding: 0;
-	margin: 15px 0 0;
+   padding: 0;
+  margin: 15px 0 0;
     float:right;
     display: inline-block;
 }
-.dropit .dropit-trigger { position: relative; }
-.dropit .dropit-submenu {
+.dropit2 .dropit2-trigger { position: relative; }
+.dropit2 .dropit2-submenu {
     position: absolute;
-    top: 100%;/*upward or downward*/
+    bottom: 100%;/*upward or downward*/
     right: 0; /* dropdown left or right */
     z-index: 1000;
     display: none;
-    min-width: 100px; /*width of the box*/
+    min-width: 150px; /*width of the box*/
     list-style: none;
-	padding: 20px;
-	margin: 20px 0 0;
+  padding: 20px;
+  margin: 20px 0 0;
 }
 
-.dropit .dropit-open .dropit-submenu { 
+.dropit2 .dropit2-open .dropit2-submenu { 
     display: block; 
     background: #FFFFFF;
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.30);
     border-radius: 4px;
 }
 
-.dropit .dropit-open .dropit-submenu:after {
+.dropit2 .dropit2-open .dropit2-submenu:after {
   content: " ";
   position: absolute;
   border-style: solid;
@@ -44,18 +44,18 @@
   display: block;
   width: 0;
   z-index: 1;
-  top: -8px; /*position of triangle*/
-  /*transform: rotate(180deg); */
+  bottom: -8px; /*position of triangle*/
+  transform: rotate(180deg); 
   right: 10px;
  }
- .dropit .dropit-open .dropit-submenu li {
+ .dropit2 .dropit2-open .dropit2-submenu li {
   display: block;
   margin-bottom: 20px;
  }
- .dropit .dropit-open .dropit-submenu li:last-child {
+ .dropit2 .dropit2-open .dropit2-submenu li:last-child {
   margin-bottom: 0px;
  }
- .dropit .dropit-open .dropit-submenu li a {
+ .dropit2 .dropit2-open .dropit2-submenu li a {
   color:#34495E;
   text-decoration: none;
   font-family: "Lato", Helvetica, Arial, sans-serif;
@@ -64,7 +64,7 @@
 
 /*Dropup Menu */
 
-.dropit .dropit-submenu .dropup {
+.dropit2 .dropit2-submenu .dropup {
     position: absolute;
     bottom: 100%;
     right: 0; /* dropdown left or right */
